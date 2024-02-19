@@ -1,0 +1,10 @@
+CC=g++
+CFLAGS=-std=c++11 -Wall
+
+all: findMax
+
+findMax: findMax.cpp
+	$(CC) $(CFLAGS) -o findMax findMax.cpp
+
+clean:
+	rm -f findMax
